@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var params = {
         user: this.get('user'),
         comment: this.get('comment'),
-        date: moment().format('MMMM Do YYYY, h:mm:ss'),
+        date: moment().format('MMMM Do YYYY, h:mm:ss a'),
         question: this.get('question')
       };
       this.set('addNewAnswer', false);
