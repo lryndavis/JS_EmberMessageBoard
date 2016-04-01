@@ -4,6 +4,7 @@
     {{#each model.answers as |answer|}}
       <p>{{answer.user}} says:</p>
       <p>{{answer.comment}}</p>
+      <p>Submitted: {{answer.date}}</p>
        <button class="btn btn-default" {{action 'deleteAnswer' answer}}>Delete this Answer</button>
     {{/each}}
   </div>

@@ -10,6 +10,7 @@ export default Ember.Component.extend({
       var params = {
         user: this.get('user'),
         comment: this.get('comment'),
+        date: moment().calendar(),
         question: this.get('question')
       };
       this.set('addNewAnswer', false);
