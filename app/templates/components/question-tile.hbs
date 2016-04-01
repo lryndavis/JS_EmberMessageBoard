@@ -1,0 +1,8 @@
+<div class="question">
+  <h2>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h2>
+  {{#if isContentShowing}}
+    <p{{action 'contentHide'}}>{{post.author}}</p>
+  {{else}}
+    <button {{action 'contentShow'}}>Show Content</button>
+  {{/if}}
+</div>

@@ -1,0 +1,17 @@
+{ "questions": [{
+    "content": "Why can't I just eat trash?",
+    "author": "Sherman",
+    "notes": "urgent matter"
+  }, {
+    "content": "Why can't I just drink all of the water?",
+    "author": "Sherman",
+    "notes": "Also an urgent matter"
+  }],
+  "answers": [{
+    "user": "Sherman",
+    "comment": "Obviously you can eat all the trash"
+  }, {
+    "user": "Sherman",
+    "comment": "Obviously you can drink all the water"
+  }]
+}

@@ -1,3 +1,5 @@
-<h1>Welcome to Q & A</h1>
+{{new-question saveQuestion="saveQuestion"}}
 
-<h2>Ask a question</h2>
+{{#each model.questions as |question|}}
+  {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+{{/each}}
