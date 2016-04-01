@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italic,700,700italic,900,900italic|Roboto:400,300italic,300,100italic,100);
+
+//color variables
+$background-color: #FFF5ED;
+$text-color--primary: #000;
+$text-color--accent: #1309F2;
+
+//font variables
+$font-stack--playfair: 'Playfair Display';
+$font-stack--roboto: 'Roboto';
+
+//font weights
+$font-weight--bold: 700;
+$font-weight--ultralight: 100;
+
+
+* {
+  font-family: $font-stack--roboto;
+  font-weight: $font-weight--ultralight;
+  background-color: $background-color;
+}
+
+//logo  and header styling
+
+.logo a {
+  font-family: $font-stack--playfair;
+  font-size: 2.2em;
+  text-align: center;
+  color: $text-color--accent;
+  text-decoration: none;
+  &:hover {
+    color: $text-color--primary;
+  }
+}
+
+.logo {
+  text-align: center;
+}
+
+.qa {
+  font-family: $font-stack--playfair;
+  font-size: 1.3em;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid $text-color--accent;
+}
+
+//links
+
+a {
+  color: $text-color--primary;
+  &:hover {
+    text-decoration: none;
+    color: $text-color--accent;
+  }
+}
