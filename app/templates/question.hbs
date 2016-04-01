@@ -1,4 +1,4 @@
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{update-question question=model updateQuestion="updateQuestion"}}
-
-{{answer-detail answer=answer model=model saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}
+  {{new-answer question=model saveAnswer="saveAnswer"}}
+{{answer-detail answers=model.answers saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}
