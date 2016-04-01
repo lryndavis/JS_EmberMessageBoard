@@ -1,0 +1,8 @@
+<div class="answers">
+  <h2>Answers</h2>
+  {{new-answer question=model saveAnswer="saveAnswer"}}
+    {{#each model.answers as |answer|}}
+      <p>{{answer.user}} says:</p>
+      <p>{{answer.comment}}</p>
+    {{/each}}
+  </div>

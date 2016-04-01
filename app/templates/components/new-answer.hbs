@@ -1,0 +1,21 @@
+{{#if addNewAnswer}}
+  <h1>Add New Answer</h1>
+    <div>
+      <form>
+      <fieldset class="form-group">
+        <label for="user">Your Name:</label>
+          {{input value=user id="user" class="form-control"}}
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="comment">Your Answer:</label>
+          {{input value=comment id="comment" class="form-control"}}
+      </fieldset>
+
+      <button class="btn btn-default" {{action 'saveAnswer'}}>Save</button>
+    </form>
+  </div>
+
+  {{else}}
+    <button class="btn btn-default new" {{action 'answerFormShow'}}>New Answer</button>
+  {{/if}}
