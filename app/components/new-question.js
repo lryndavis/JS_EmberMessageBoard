@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         author: this.get('author'),
         notes: this.get('notes'),
-        date: moment().calendar()
+        date: moment().format('MMMM Do YYYY, h:mm:ss')
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);

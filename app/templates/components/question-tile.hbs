@@ -1,9 +1,12 @@
+{{#each sortedQuestions as |question|}}
 <div class="question">
   <h2>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h2>
   <p>By: {{question.author}}</p>
   {{#if isContentShowing}}
     <p{{action 'contentHide'}}>{{question.notes}}</p>
+    <p{{action 'contentHide'}}>{{question.date}}</p>
   {{else}}
     <button {{action 'contentShow'}}>Show Additional Notes</button>
   {{/if}}
 </div>
+{{/each}}
