@@ -1,3 +1,9 @@
-{{new-question saveQuestion="saveQuestion"}}
+<div class="col-md-6 col-left">
+  <h2>Ask a Question</h2>
+  {{new-question saveQuestion="saveQuestion"}}
+</div>
 
-{{question-tile questions=model.questions update="update" destroyQuestion="destroyQuestion"}}
+<div class="col-md-6 col-right">
+  <h2>Find Answers</h2>
+  {{question-tile questions=model.questions update="update" destroyQuestion="destroyQuestion"}}
+</div>

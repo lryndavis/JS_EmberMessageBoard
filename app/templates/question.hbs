@@ -1,4 +1,8 @@
+<div class="col-md-6 col-left">
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{update-question question=model updateQuestion="updateQuestion"}}
-  {{new-answer question=model saveAnswer="saveAnswer"}}
+{{new-answer question=model saveAnswer="saveAnswer"}}
+</div>
+<div class="col-md-6 col-right">
 {{answer-detail answers=model.answers saveAnswer="saveAnswer" destroyAnswer="destroyAnswer"}}
+</div>
