@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
-    update(question, params) {
+    updateQuestion(question, params) {
       Object.keys(params).forEach(function(key){
         if(params[key]!==undefined) {
           question.set(key, params[key]);
