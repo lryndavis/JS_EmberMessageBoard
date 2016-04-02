@@ -17,9 +17,9 @@
         {{input value=notes id="notes" class="form-control"}}
       </fieldset>
 
-      <button class="btn btn-default" {{action 'saveQuestion'}}>Save</button>
+      <button class="button" {{action 'saveQuestion'}}>Save</button>
     </form>
   </div>
   {{else}}
-  <button class="btn btn-default" {{action 'questionFormShow'}}>New Question</button>
+  <button class="button btn-blue" {{action 'questionFormShow'}}>New Question</button>
   {{/if}}

@@ -1,10 +1,10 @@
-
-<div class="answers">
-  <h2>Answers</h2>
-    {{#each sortedAnswers as |answer|}}
+  <h2>Answers:</h2>
+  {{#each sortedAnswers as |answer|}}
+    <div class="answer">
       <p>{{answer.user}} says:</p>
       <p>{{answer.comment}}</p>
       <p>Submitted: {{answer.date}}</p>
-       <button class="btn btn-default" {{action 'deleteAnswer' answer}}>Delete this Answer</button>
-    {{/each}}
-  </div>
+      <button class="button" {{action 'deleteAnswer' answer}}>Delete this Answer</button>
+      <div class="border"></div>
+    </div>
+  {{/each}}
