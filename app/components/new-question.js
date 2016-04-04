@@ -11,6 +11,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         author: this.get('author'),
         notes: this.get('notes'),
+        //moment js timestamp
         date: moment().format('MMMM Do YYYY, h:mm:ss a')
       };
       this.set('addNewQuestion', false);

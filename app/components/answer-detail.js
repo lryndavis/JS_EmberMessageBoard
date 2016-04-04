@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  //sort using timestamp to show most recent answers 
   sortDefinition: ['date:desc'],
   sortedAnswers: Ember.computed.sort('answers', 'sortDefinition'),
   actions: {
