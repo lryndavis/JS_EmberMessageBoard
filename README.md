@@ -4,14 +4,14 @@ By Lauryn Davis
 
 4.1.2016
 
-Epicodus Week 3, Ember Code Review
+Epicodus Javascript Week 3 / Ember Code Review
 
 Q & A is a simple question and answer message board app created in Ember JS. The app allows a user to submit a question, and receive responses from other users. All questions and answers are sorted by most recent posting, using a timestamp generated with Moment JS.
 
 Project Objectives:
 
 * Data is stored in and retrieved from Ember Data models and Firebase
-* Components are used to create display and behavior for your templates
+* Components are used to create display and behavior for templates
 * One-to-many relationship exists between Question and Answers
 
 ##Technologies Used
