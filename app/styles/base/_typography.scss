@@ -1,0 +1,58 @@
+//Google fonts import
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italic,700,700italic,900,900italic|Roboto:400,300italic,300,100italic,100);
+
+//global type styles
+* {
+  font-family: $font-stack--roboto;
+  font-weight: $font-weight--ultralight;
+  background-color: $background-color;
+}
+
+//logo  and header type styling
+
+.logo a {
+  font-family: $font-stack--playfair;
+  font-size: 2.2em;
+  text-align: center;
+  color: $text-color--accent;
+  text-decoration: none;
+  &:hover {
+    color: $text-color--primary;
+  }
+}
+
+.logo {
+  text-align: center;
+}
+
+.qa {
+  font-family: $font-stack--playfair;
+  font-size: 1.3em;
+}
+
+//heading and p elements
+
+h2 {
+  font-weight: $font-weight--medium;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: $font-weight--medium;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.last {
+  border-bottom: 1px solid $text-color--accent;
+  padding-bottom: 15px;
+}
+
+.border {
+  margin: 20px auto;
+  width: 225px;
+  border-bottom: 1px solid $text-color--accent;
+}

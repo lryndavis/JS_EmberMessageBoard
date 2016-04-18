@@ -1,0 +1,33 @@
+// button styling
+
+.button {
+  padding: 10px 20px;
+  width: 225px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: $font-weight--medium;
+  margin: 5px 0;
+  &:hover {
+    color: $text-color--accent;
+    border: 1px solid $text-color--accent;
+  }
+}
+
+.btn-fake {
+  border: none;
+  text-transform: uppercase;
+  color: $text-color--accent;
+  &:hover {
+    color: $text-color--primary;
+  }
+}
+
+.btn-blue {
+  color: $text-color--accent;
+  border: 1px solid $text-color--accent;
+  &:hover {
+    color: $text-color--primary;
+    border: 1px solid $text-color--primary;
+  }
+}

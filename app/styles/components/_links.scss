@@ -1,0 +1,12 @@
+//links
+a {
+  color: $text-color--primary;
+  &:hover {
+    text-decoration: none;
+    color: $text-color--accent;
+  }
+}
+
+.question-link a {
+  font-weight: $font-weight--medium;
+}
